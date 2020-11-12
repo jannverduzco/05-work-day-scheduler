@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 
-    // VARIABLES -------------------
+    // VARIABLES ----------------------------------------------
     var userTask = "";
 
     // current date display
@@ -9,15 +9,10 @@ $(document).ready(function () {
     $("#currentDay").text(date);
 
 
-    // LISTENERS -------------------
+    // LISTENERS ------------------------------------------------
 
-    // time-block task
-    // $(this).siblings(".description").val()
-    $(".saveBtn").on("click", function () {
-        userTask.text
-    });
-
-    // FUNCTIONS -------------------
+ 
+    // FUNCTIONS ------------------------------------------------
 
     $(".description").each(function () {
         //convert data-hou string to number & declares the variable
@@ -39,11 +34,15 @@ $(document).ready(function () {
             $(this).removeClass("past")
             $(this).removeClass("present")
         }
-
-
-
-
     })
+
+
+      
+    // $(this).siblings(".description").val()
+    $(".saveBtn").on("click", function () {
+        userTask.text
+    });
+
 
 
 
