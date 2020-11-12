@@ -38,18 +38,24 @@ $(document).ready(function () {
 
       
     // save added tasks
-    $(".saveBtn").on("click", function () {
+    $(".saveBtn").on("click", function () { 
+    // setting a variable for the value of the description
     var userTask = $(this).siblings(".description").val()
+    //varibale set for key target
     var descriptionEl = $(this).attr("id")
-    // console.log(descriptionEl)
+    // set in my local storage for key, value
     localStorage.setItem(descriptionEl , userTask);
     console.log(userTask)
     });
-
+    
+    
     for (let i = 9; i <= 17 ; i++) {
-        $("#" + i + "des").val(localStorage.getItem(i))
-        // console.log(i)
+        var myData = localStorage.getItem(i + "btn")
+        // $("#" + i + "des").val(localStorage.getItem(i ))
+        console.log(myData)
     }
+    
+
 
    
 
