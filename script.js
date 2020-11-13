@@ -35,8 +35,6 @@ $(document).ready(function () {
         }
     })
 
-
-
     // Save added task into local storage
     $(".saveBtn").on("click", function () {
         // setting a variable for the value of the description
@@ -45,25 +43,21 @@ $(document).ready(function () {
         var descriptionEl = $(this).attr("id")
         // set in my local storage for key, value
         localStorage.setItem(descriptionEl, userTask);
-        console.log(userTask)
+        // console.log(userTask)
     });
 
-    // Retrieve added description from local Storage for display
-    $("#9").val(localStorage.getItem("9btn"))
-    $("#10").val(localStorage.getItem("10btn"))
-    $("#11").val(localStorage.getItem("11btn"))
-    $("#12").val(localStorage.getItem("12btn"))
-    $("#13").val(localStorage.getItem("13btn"))
-    $("#14").val(localStorage.getItem("14btn"))
-    $("#15").val(localStorage.getItem("15btn"))
-    $("#16").val(localStorage.getItem("16btn"))
-    $("#17").val(localStorage.getItem("17btn"))
+    // Retrieve added description from local Storage for display in each description block
+
+    for (var i = 9; i < 18; i++) {
+        $("#" + i + "task").val(localStorage.getItem(i + "btn"))
+        console.log(i + "task")
+        console.log (i + "btn")
+        
+    };
+    
 
 
-    for (var i = 1; i < 10; i++)(function () {
-        $("#" + "task").val(localStorage.getItem("#" + "btn"))
-        console.log([i])
-    });
+  
 
 
 
