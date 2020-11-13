@@ -12,6 +12,7 @@ This work day scheduler is color coded to make it more appealing and helpful to 
 Below is a screenshot of this Work Day Scheduler
 
 ![GitHub Logo](/Assets/work-scheduler.png)
+Format: ![Work Day Schedulet screenshot](url)
 
 ## Live Link
 https://jannverduzco.github.io/05-work-day-scheduler/
