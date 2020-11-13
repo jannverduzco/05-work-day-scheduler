@@ -2,15 +2,15 @@ $(document).ready(function () {
 
     // VARIABLES ----------------------------------------------
 
+    // LISTENERS ------------------------------------------------
+
+    // FUNCTIONS ------------------------------------------------
 
     // current date display
     var date = moment().format("dddd MMMM Do, YYYY")
     $("#currentDay").text(date);
 
-    // LISTENERS ------------------------------------------------
 
-
-    // FUNCTIONS ------------------------------------------------
 
     $(".description").each(function () {
         //convert data-hou string to number & declares the variable
@@ -48,9 +48,7 @@ $(document).ready(function () {
         console.log(userTask)
     });
 
-    // Retrieve added tast from local Storage
-
-
+    // Retrieve added description from local Storage for display
     $("#9").val(localStorage.getItem("9btn"))
     $("#10").val(localStorage.getItem("10btn"))
     $("#11").val(localStorage.getItem("11btn"))
@@ -60,14 +58,12 @@ $(document).ready(function () {
     $("#15").val(localStorage.getItem("15btn"))
     $("#16").val(localStorage.getItem("16btn"))
     $("#17").val(localStorage.getItem("17btn"))
-   
-    // for (let i = 9; i <= 17 ; i++) {
-    // var myData = localStorage.getItem()
-    //     // $("#" + i + "").val(localStorage.getItem(i ))
-    // console.log(myData)
-    // }
 
 
+    for (var i = 1; i < 10; i++)(function () {
+        $("#" + "task").val(localStorage.getItem("#" + "btn"))
+        console.log([i])
+    });
 
 
 
