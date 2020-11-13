@@ -46,18 +46,18 @@ $(document).ready(function () {
         // console.log(userTask)
     });
 
-    // Retrieve added description from local Storage for display in each description block
-
+    // Retrieve the added description from local Storage for display in each description block
+    // looping through all the time blocks
     for (var i = 9; i < 18; i++) {
+        // gettind the value stored when pressing "#btn" to display in "#task"
         $("#" + i + "task").val(localStorage.getItem(i + "btn"))
-        console.log(i + "task")
-        console.log (i + "btn")
-        
+        // console.log(i + "task")
+        // console.log (i + "btn")
     };
-    
 
 
-  
+
+
 
 
 
