@@ -6,12 +6,23 @@ This work day scheduler gives the user a 9 hour scheduling organizer. It starts 
 
 This work day scheduler is color coded to make it more appealing and helpful to the eye. The time blocks in grey represent the past time hours of the current day. The pastel red time 'block' represents the current hour of the day. And the green time blocks represent the future/upcoming hours for that currenty day. 
 
+## Contributors
+Janneth Alvarado Verduzco - janneth_verduzco@live.com
+
+## Language/Technologies Used
+* HTML5
+* CSS
+* JavaScript
+* Bootstrap
+* Font Awesome
+* jQuery
 
 ## Mock-Up
 
 Below is a screenshot of this Work Day Scheduler
 
 ![GitHub Logo](/Assets/scheduler.JPG)
+![GitHub Logo](/Assets/Responsive.PNG)
 
 
 ## Live Link
